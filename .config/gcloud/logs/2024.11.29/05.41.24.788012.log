@@ -1,0 +1,19 @@
+2024-11-29 05:41:24,808 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2024-11-29 05:41:24,812 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'get_credentials']
+2024-11-29 05:41:25,000 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/437612907649-compute@developer.gserviceaccount.com/?recursive=true
+2024-11-29 05:41:25,006 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2024-11-29 05:41:25,007 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/437612907649-compute@developer.gserviceaccount.com/?recursive=true HTTP/1.1" 200 142
+2024-11-29 05:41:25,028 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/437612907649-compute@developer.gserviceaccount.com/token
+2024-11-29 05:41:25,046 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/437612907649-compute@developer.gserviceaccount.com/token HTTP/1.1" 200 871
+2024-11-29 05:41:25,108 DEBUG    root            Running [gcloud.container.clusters.get-credentials] with arguments: [--project: "opensource9", --zone: "asia-northeast3-a", NAME: "kube"]
+2024-11-29 05:41:25,115 INFO     ___FILE_ONLY___ Fetching cluster endpoint and auth data.
+
+2024-11-29 05:41:25,118 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2024-11-29 05:41:25,235 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/opensource9/locations/asia-northeast3-a/clusters/kube?alt=json HTTP/1.1" 200 None
+2024-11-29 05:41:25,247 CRITICAL root            ACTION REQUIRED: gke-gcloud-auth-plugin, which is needed for continued use of kubectl, was not found or is not executable. Install gke-gcloud-auth-plugin for use with kubectl by following https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-access-for-kubectl#install_plugin
+2024-11-29 05:41:25,251 DEBUG    root            Saved kubeconfig to /home/g20210370/.kube/config
+2024-11-29 05:41:25,252 INFO     ___FILE_ONLY___ kubeconfig entry generated for kube.
+
+2024-11-29 05:41:25,252 DEBUG    root            Chosen display Format:default
+2024-11-29 05:41:25,253 INFO     root            Display format: "default"
+2024-11-29 05:41:25,253 DEBUG    root            SDK update checks are disabled.
